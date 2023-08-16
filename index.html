@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza's portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="bg-[#96B6C5] py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a class="text-xl font-semibold text-white" href="/#">Hamza Al-Khaldi</a>
+            <button id="mobile-menu-button" type="button" class="lg:hidden text-white">
+                <span class="navbar-toggler-icon">☰</span>
+            </button>
+            <ul class="hidden lg:flex space-x-4">
+                <li><a href="#home" class="text-white">Home</a></li>
+                <li><a href="#projects" class="text-white">Projects</a></li>
+                <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#96B6C5] py-2">
+            <ul class="text-center">
+                <li class="py-2"><a href="#home" class="text-white">Home</a></li>
+                <li class="py-2"><a href="#projects" class="text-white">Projects</a></li>
+                <li class="py-2"><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="py-5 bg-[#96B6C5] h-96">
+        <div class="container text-center">
+            <h1 class="text-4xl">Welcome to My Portfolio</h1>
+            <p class="p-20 text-xl">I'm a passionate web developer with a love for creating amazing user experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-[#ADC4CE]">
+        <div class="container text-center">
+            <h2 class="text-4xl pb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <picture>
+                            <source srcset="https://images.pexels.com/photos/69432/pexels-photo-69432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" media="(max-width: 767px)">
+                            <img srcset="https://images.pexels.com/photos/69432/pexels-photo-69432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Project 1">
+                        </picture>
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Website</h5>
+                            <p class="card-text pb-3">Built a fully functional e-commerce website using React and Node.js.
+                            </p>
+                            <a href="project1.html?project=ecommerce" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <picture>
+                            <source srcset="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" media="(max-width: 767px)">
+                            <img srcset="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Project 1">
+                        </picture>
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Redesign</h5>
+                            <p class="card-text pb-3">Revamped my personal portfolio using Bootstrap for a sleek, modern
+                                look.</p>
+                            <a href="project2.html?project=portfolio" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <picture>
+                            <source srcset="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" media="(max-width: 767px)">
+                            <img srcset="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Project 1">
+                        </picture>
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Platform</h5>
+                            <p class="card-text pb-3">Developed a blog platform using Django and integrated user
+                                authentication.</p>
+                            <a href="project3.html?project=blog" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-[#EEE0C9]">
+        <div class="container text-center">
+            <h2 class="text-4xl">Contact Me</h2>
+            <p class="p-5">If you're interested in collaborating or just want to say hello, feel free to reach out!</p>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary bg-[#007bff]">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

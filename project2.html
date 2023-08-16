@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Redesign</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <nav class="bg-[#96B6C5] py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a class="text-xl font-semibold text-white" href="#">Hamza Al-Khaldi</a>
+            <button id="mobile-menu-button" type="button" class="lg:hidden text-white">
+                <span class="navbar-toggler-icon">☰</span>
+            </button>
+            <ul class="hidden lg:flex space-x-4">
+                <li><a href="/#home" class="text-white">Home</a></li>
+                <li><a href="/#projects" class="text-white">Projects</a></li>
+                <li><a href="/#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#96B6C5] py-2">
+            <ul class="text-center">
+                <li class="py-2"><a href="/#home" class="text-white">Home</a></li>
+                <li class="py-2"><a href="/#projects" class="text-white">Projects</a></li>
+                <li class="py-2"><a href="/#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="project-portfolio" class="py-5 bg-[#ADC4CE] h-screen flex justify-center items-center">
+        <div class="container text-center">
+            <h2 class="text-4xl pb-5">Portfolio Redesign</h2>
+            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Redesign" class="mx-auto mb-4 rounded-lg shadow-md" style="max-width: 50%;">
+            <p class="text-lg p-2">
+                Revamped personal portfolio using Bootstrap for a sleek, modern look. The redesign aimed to achieve a clean
+            and responsive design to effectively showcase projects and skills.
+            </p>
+            <p class="text-lg p-2">
+                Technologies Used: HTML, CSS, Bootstrap framework.
+            </p>
+            <p class="text-lg p-2">
+                Achievements: The redesign resulted in improved load times and an enhanced user experience through
+            optimized code and responsive design.
+            </p>
+            <p class="text-lg p-2">
+                Challenges Faced: The main challenge was to balance the aesthetic appeal of the portfolio with a
+            user-friendly interface that appeals to potential employers and clients.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

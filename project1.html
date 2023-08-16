@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Commerce Website</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <nav class="bg-[#96B6C5] py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a class="text-xl font-semibold text-white" href="#">Hamza Al-Khaldi</a>
+            <button id="mobile-menu-button" type="button" class="lg:hidden text-white">
+                <span class="navbar-toggler-icon">☰</span>
+            </button>
+            <ul class="hidden lg:flex space-x-4">
+                <li><a href="/#home" class="text-white">Home</a></li>
+                <li><a href="/#projects" class="text-white">Projects</a></li>
+                <li><a href="/#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#96B6C5] py-2">
+            <ul class="text-center">
+                <li class="py-2"><a href="/#home" class="text-white">Home</a></li>
+                <li class="py-2"><a href="/#projects" class="text-white">Projects</a></li>
+                <li class="py-2"><a href="/#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="project-ecommerce" class="py-5 bg-[#ADC4CE] h-screen flex justify-center items-center">
+        <div class="container text-center">
+            <h2 class="text-4xl pb-5">E-Commerce Website</h2>
+            <img src="https://images.pexels.com/photos/69432/pexels-photo-69432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-Commerce Website" class="mx-auto mb-4 rounded-lg shadow-md" style="max-width: 50%;">
+            <p class="text-lg p-2">
+                Built a fully functional e-commerce website using React and Node.js. The website offers user registration
+                and authentication, a comprehensive product catalog, efficient shopping cart functionality, and secure
+                payment processing.
+            </p>
+            <p class="text-lg p-2">
+                Technologies Used: React, Node.js, Express, MongoDB, Stripe for payments.
+            </p>
+            <p class="text-lg p-2">
+                Challenges Faced: One of the key challenges was implementing real-time inventory tracking to ensure accurate
+                product availability. Additionally, optimizing performance for a large number of products was crucial to
+                provide a smooth user experience.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
